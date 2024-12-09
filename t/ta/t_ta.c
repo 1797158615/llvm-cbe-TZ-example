@@ -24,6 +24,7 @@ void TA_CloseSessionEntryPoint(void __maybe_unused *sess_ctx)
   (void)&sess_ctx; /* Unused parameter */
 }
 
+
 uint32_t inc(uint32_t _1, uint32_t _2) {
   uint32_t _3;    /* Address-exposed local */
   uint32_t _4;    /* Address-exposed local */
@@ -31,11 +32,11 @@ uint32_t inc(uint32_t _1, uint32_t _2) {
   uint32_t _6;
 
   _3 = _1;
-#line 4 "/home/yxk/attributes/t.c"
+#line 9 "/home/yxk/attributes/t.c"
   ;
   _4 = _2;
   ;
-#line 6 "/home/yxk/attributes/t.c"
+#line 11 "/home/yxk/attributes/t.c"
   _5 = _3;
   _6 = _4;
   return (llvm_add_u32(_5, _6));
@@ -53,11 +54,11 @@ void inc_value(void* _7, void* _8) {
   void* _16;
 
   _9 = _7;
-#line 10 "/home/yxk/attributes/t.c"
+#line 15 "/home/yxk/attributes/t.c"
   ;
   _10 = _8;
   ;
-#line 12 "/home/yxk/attributes/t.c"
+#line 17 "/home/yxk/attributes/t.c"
   _11 = _9;
   _12 = *(uint32_t*)_11;
   _13 = _10;

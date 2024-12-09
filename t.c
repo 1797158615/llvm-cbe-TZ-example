@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int ca(){
+printf("hello\n");
+return 0;
+}
+
 __attribute__((__annotate__("TZ")))
 int inc(int a, int b)
 {
@@ -17,5 +22,6 @@ int i = 42;
 int j = 1;
 inc_value(&i, &j);
 printf("i+j=%d\n", i);
+ca();
 return 0; 
 }
